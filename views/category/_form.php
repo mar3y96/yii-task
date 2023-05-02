@@ -25,7 +25,6 @@
 	if ($model->image) {
 		echo Html::label('current Image');
 		echo Html::img($model->getImage());
-
 	}
 ?>
 <div class="form-group mt-4">
