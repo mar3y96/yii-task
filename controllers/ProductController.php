@@ -41,7 +41,7 @@
         public function actionIndex()
         {
             $dataProvider = new ActiveDataProvider([
-                'query' => Product::find(),
+                'query' => Product::find()->with('category'),
                 /*
                 'pagination' => [
                     'pageSize' => 50
